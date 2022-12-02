@@ -1,0 +1,103 @@
+body{
+  display: flex;
+    font-size: 100px;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+	width:100%;
+  font-size: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  position:sticky;
+  top:0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+/* The animation */
+@keyframes color-change {
+  from {
+    color: white;
+  }
+  25% {
+    color: indianred;
+  }
+  50% {
+    color: cadetblue;
+  }
+  75% {
+    color: darkseagreen;
+  }
+  to {
+    color: yellow;
+  }
+}
+
+/* The element */
+h1 {
+  color: black;
+  animation-name: color-change;
+  animation-duration: 15s;
+    animation
+}
+
+    
+    .button1 {
+  font-size: 1.5em;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 1.2em;
+  width: 10em;
+  border-radius: 2em;
+  border: 1px solid white;
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+p{
+  font-family: "Josefin Sans",sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28pt;
+  position: relative;
+  float: none;
+  color: black;
+}
+
+.section1 h1 {
+  font-size: 5vw;
+  color: white;
+    
+    @media (max-width: 879px) {
+	#nav-open:target nav {
+    margin-top: 4em;
+		height:50vh;
+    float: right;
+    width: 200px;
+	}
+  nav li:hover {
+    background-color:lightgrey;
+    color:white;
+  }
+}
+
+@media (min-width:880px) {
+
+	.nav-toggle {display:none !important;}
+
+	nav {
+		float:right;
+		width:auto;
+		display:block !important;
+		height:auto;
+	}
